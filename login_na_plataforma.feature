@@ -1,22 +1,24 @@
-Feature: Login na plataforma
-    Como cliente da EBAC-SHOP
-    Quero fazer login (autenticação) na plataforma
-    Para visualizar meus pedidos
+            #language: pt
 
-    Background:
-        Given que eu acesse a página de autenticação da EBAC-SHOP
+            Funcionalidade: Login na plataforma
+            Como cliente da EBAC-SHOP
+            Quero fazer login (autenticação) na plataforma
+            Para visualizar meus pedidos
 
-    Scenario Outline: Dados válidos
-        When eu inserir o <usuario>
-        And a <senha>
-        Then deve ser direcionado para a tela de checkout
+            Contexto:
+            Dado que eu acesse a página de autenticação da EBAC-SHOP
 
-        Examples:
+            Esquema do Cenário: Dados válidos
+            Quando eu inserir o <usuario>
+            E a <senha>
+            Então deve ser direcionado para a tela de checkout
+
+            Exemplos:
             | usuario   | senha       |
             | carinha10 | 123423      |
             | usuario08 | jkgdhskfgjh |
 
-    Scenario: Dados inválidos
-        When eu inserir o "link20"
-        And a "zelda"
-        Then deve aparecer a mensagem "Usuário ou senha inválidos"
+            Cenário: Dados inválidos
+            Quando eu inserir o "link20"
+            E a "zelda"
+            Então deve aparecer a mensagem "Usuário ou senha inválidos"

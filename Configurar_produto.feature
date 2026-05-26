@@ -20,7 +20,7 @@
             | Orange | S       | 5          |
             | Red    | L       | 10         |
 
-            Esquema do Cenário: quantidade inválida
+            Cenário: quantidade inválida
             Quando eu escolher a cor blue e o tamanho XL
             E adicionar a quantidade 11
             Então deve aparecer a mensagem "Quantidade máxima permitida para esse item é 10"
@@ -36,7 +36,7 @@
             | tamanho    |
             | quantidade |
 
-            Esquema do Cenário: limpar o carrinho
+            Cenário: limpar o carrinho
             Dado que eu já tenha adicionado produtos no carrinho
             Quando eu clicar em "limpar"
             Então o carrinho deve estar vazio

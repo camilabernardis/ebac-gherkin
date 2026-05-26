@@ -9,16 +9,9 @@
             Dado que eu esteja na tela de cadastro da plataforma da EBAC-SHOP
 
             Esquema do Cenário: Cadastro com dados válidos
-            Quando eu inserir o <nome>
-            E o <sobrenome>
-            E o <Pais>
-            E o <endereco>
-            E a <cidade>
-            E o <cep>
-            E o <telefone>
-            E o <email>
+            Quando eu inserir o <nome>, <sobrenome>, <Pais>, <endereco>, <cidade>, <cep>, <telefone>, <email>
             Então o cadastro deve ser criado com sucesso
-            E deve exibir a mensagem "Seja bem-vindo(a) <nome>"
+            E deve exibir a mensagem "Seja bem-vindo(a)"
 
             Exemplos:
             | nome     | sobrenome | Pais     | endereco               | cidade    | cep       | telefone        | email                   |
